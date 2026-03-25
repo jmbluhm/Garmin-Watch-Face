@@ -1,0 +1,4 @@
+<drawables>
+    <!-- NOTE: launcher_icon.png must be added manually as a 48x48 PNG in resources/images/ -->
+    <bitmap id="LauncherIcon" filename="../images/launcher_icon.png"/>
+</drawables>

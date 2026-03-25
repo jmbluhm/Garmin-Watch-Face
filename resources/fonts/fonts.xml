@@ -1,0 +1,5 @@
+<resources>
+    <fonts>
+        <font id="DSEG7Time" filename="dseg7_time.fnt" filter="0123456789: " />
+    </fonts>
+</resources>
