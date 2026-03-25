@@ -1,3 +1,14 @@
 <strings>
     <string id="AppName">RedLine</string>
+    <string id="ColorTitle">Accent Color</string>
+    <string id="ColorRed">Red</string>
+    <string id="ColorOrange">Orange</string>
+    <string id="ColorAmber">Amber</string>
+    <string id="ColorYellow">Yellow</string>
+    <string id="ColorGreen">Green</string>
+    <string id="ColorCyan">Cyan</string>
+    <string id="ColorBlue">Blue</string>
+    <string id="ColorPurple">Purple</string>
+    <string id="ColorPink">Pink</string>
+    <string id="ColorWhite">White</string>
 </strings>

@@ -3,6 +3,8 @@ using Toybox.WatchUi;
 
 class RedLineApp extends Application.AppBase {
 
+    hidden var _view;
+
     function initialize() {
         AppBase.initialize();
     }
@@ -14,6 +16,12 @@ class RedLineApp extends Application.AppBase {
     }
 
     function getInitialView() {
-        return [new RedLineView(), new RedLineDelegate()];
+        _view = new RedLineView();
+        return [_view, new RedLineDelegate()];
+    }
+
+    function onSettingsChanged() {
+        _view.loadColorSetting();
+        WatchUi.requestUpdate();
     }
 }

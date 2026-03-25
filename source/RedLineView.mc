@@ -1,3 +1,4 @@
+using Toybox.Application;
 using Toybox.Graphics;
 using Toybox.Lang;
 using Toybox.System;
@@ -10,11 +11,11 @@ using Toybox.Weather;
 
 class RedLineView extends WatchUi.WatchFace {
 
-    // Colors
-    hidden const CLR_PRIMARY   = 0xCC1111;
-    hidden const CLR_SECONDARY = 0x882222;
-    hidden const CLR_GHOST     = 0x330000;
-    hidden const CLR_BG        = 0x000000;
+    // Colors (loaded from settings)
+    hidden var CLR_PRIMARY   = 0xCC1111;
+    hidden var CLR_SECONDARY = 0x661111;
+    hidden var CLR_GHOST     = 0x330000;
+    hidden const CLR_BG      = 0x000000;
 
     // Day-of-week lookup (1=Sun per Gregorian)
     hidden var _dayNames = ["", "SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
@@ -52,6 +53,22 @@ class RedLineView extends WatchUi.WatchFace {
 
     function initialize() {
         WatchFace.initialize();
+        loadColorSetting();
+    }
+
+    function loadColorSetting() {
+        var color = Application.Properties.getValue("foregroundColor");
+        if (color != null && color instanceof Number) {
+            CLR_PRIMARY = color;
+        } else {
+            CLR_PRIMARY = 0xCC1111;
+        }
+        // Derive secondary (~50% brightness) and ghost (~25% brightness)
+        var r = (CLR_PRIMARY >> 16) & 0xFF;
+        var g = (CLR_PRIMARY >> 8) & 0xFF;
+        var b = CLR_PRIMARY & 0xFF;
+        CLR_SECONDARY = ((r / 2) << 16) | ((g / 2) << 8) | (b / 2);
+        CLR_GHOST = ((r / 4) << 16) | ((g / 4) << 8) | (b / 4);
     }
 
     function onLayout(dc) {
