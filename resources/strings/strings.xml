@@ -11,4 +11,25 @@
     <string id="ColorPurple">Purple</string>
     <string id="ColorPink">Pink</string>
     <string id="ColorWhite">White</string>
+    <string id="Widget1Title">Top Left Widget</string>
+    <string id="Widget2Title">Top Right Widget</string>
+    <string id="Widget3Title">Bottom Left Widget</string>
+    <string id="Widget4Title">Bottom Right Widget</string>
+    <string id="WidgetNone">None</string>
+    <string id="WidgetHeartRate">Heart Rate</string>
+    <string id="WidgetSteps">Steps</string>
+    <string id="WidgetCalories">Calories</string>
+    <string id="WidgetDistance">Distance</string>
+    <string id="WidgetFloors">Floors</string>
+    <string id="WidgetActiveMin">Active Minutes</string>
+    <string id="WidgetBodyBattery">Body Battery</string>
+    <string id="WidgetStress">Stress</string>
+    <string id="WidgetRespiration">Respiration</string>
+    <string id="WidgetTemperature">Temperature</string>
+    <string id="WidgetHumidity">Humidity</string>
+    <string id="WidgetDevBattery">Battery %</string>
+    <string id="WidgetAltitude">Altitude</string>
+    <string id="WidgetSunrise">Sunrise</string>
+    <string id="WidgetSunset">Sunset</string>
+    <string id="WidgetSpO2">Blood Oxygen</string>
 </strings>

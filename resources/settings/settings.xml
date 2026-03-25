@@ -13,4 +13,88 @@
             <listEntry value="16777215">@Strings.ColorWhite</listEntry>
         </settingConfig>
     </setting>
+    <setting propertyKey="@Properties.widget1" title="@Strings.Widget1Title">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.WidgetNone</listEntry>
+            <listEntry value="1">@Strings.WidgetHeartRate</listEntry>
+            <listEntry value="2">@Strings.WidgetSteps</listEntry>
+            <listEntry value="3">@Strings.WidgetCalories</listEntry>
+            <listEntry value="4">@Strings.WidgetDistance</listEntry>
+            <listEntry value="5">@Strings.WidgetFloors</listEntry>
+            <listEntry value="6">@Strings.WidgetActiveMin</listEntry>
+            <listEntry value="7">@Strings.WidgetBodyBattery</listEntry>
+            <listEntry value="8">@Strings.WidgetStress</listEntry>
+            <listEntry value="9">@Strings.WidgetRespiration</listEntry>
+            <listEntry value="10">@Strings.WidgetTemperature</listEntry>
+            <listEntry value="11">@Strings.WidgetHumidity</listEntry>
+            <listEntry value="12">@Strings.WidgetDevBattery</listEntry>
+            <listEntry value="13">@Strings.WidgetAltitude</listEntry>
+            <listEntry value="14">@Strings.WidgetSunrise</listEntry>
+            <listEntry value="15">@Strings.WidgetSunset</listEntry>
+            <listEntry value="16">@Strings.WidgetSpO2</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.widget2" title="@Strings.Widget2Title">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.WidgetNone</listEntry>
+            <listEntry value="1">@Strings.WidgetHeartRate</listEntry>
+            <listEntry value="2">@Strings.WidgetSteps</listEntry>
+            <listEntry value="3">@Strings.WidgetCalories</listEntry>
+            <listEntry value="4">@Strings.WidgetDistance</listEntry>
+            <listEntry value="5">@Strings.WidgetFloors</listEntry>
+            <listEntry value="6">@Strings.WidgetActiveMin</listEntry>
+            <listEntry value="7">@Strings.WidgetBodyBattery</listEntry>
+            <listEntry value="8">@Strings.WidgetStress</listEntry>
+            <listEntry value="9">@Strings.WidgetRespiration</listEntry>
+            <listEntry value="10">@Strings.WidgetTemperature</listEntry>
+            <listEntry value="11">@Strings.WidgetHumidity</listEntry>
+            <listEntry value="12">@Strings.WidgetDevBattery</listEntry>
+            <listEntry value="13">@Strings.WidgetAltitude</listEntry>
+            <listEntry value="14">@Strings.WidgetSunrise</listEntry>
+            <listEntry value="15">@Strings.WidgetSunset</listEntry>
+            <listEntry value="16">@Strings.WidgetSpO2</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.widget3" title="@Strings.Widget3Title">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.WidgetNone</listEntry>
+            <listEntry value="1">@Strings.WidgetHeartRate</listEntry>
+            <listEntry value="2">@Strings.WidgetSteps</listEntry>
+            <listEntry value="3">@Strings.WidgetCalories</listEntry>
+            <listEntry value="4">@Strings.WidgetDistance</listEntry>
+            <listEntry value="5">@Strings.WidgetFloors</listEntry>
+            <listEntry value="6">@Strings.WidgetActiveMin</listEntry>
+            <listEntry value="7">@Strings.WidgetBodyBattery</listEntry>
+            <listEntry value="8">@Strings.WidgetStress</listEntry>
+            <listEntry value="9">@Strings.WidgetRespiration</listEntry>
+            <listEntry value="10">@Strings.WidgetTemperature</listEntry>
+            <listEntry value="11">@Strings.WidgetHumidity</listEntry>
+            <listEntry value="12">@Strings.WidgetDevBattery</listEntry>
+            <listEntry value="13">@Strings.WidgetAltitude</listEntry>
+            <listEntry value="14">@Strings.WidgetSunrise</listEntry>
+            <listEntry value="15">@Strings.WidgetSunset</listEntry>
+            <listEntry value="16">@Strings.WidgetSpO2</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.widget4" title="@Strings.Widget4Title">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.WidgetNone</listEntry>
+            <listEntry value="1">@Strings.WidgetHeartRate</listEntry>
+            <listEntry value="2">@Strings.WidgetSteps</listEntry>
+            <listEntry value="3">@Strings.WidgetCalories</listEntry>
+            <listEntry value="4">@Strings.WidgetDistance</listEntry>
+            <listEntry value="5">@Strings.WidgetFloors</listEntry>
+            <listEntry value="6">@Strings.WidgetActiveMin</listEntry>
+            <listEntry value="7">@Strings.WidgetBodyBattery</listEntry>
+            <listEntry value="8">@Strings.WidgetStress</listEntry>
+            <listEntry value="9">@Strings.WidgetRespiration</listEntry>
+            <listEntry value="10">@Strings.WidgetTemperature</listEntry>
+            <listEntry value="11">@Strings.WidgetHumidity</listEntry>
+            <listEntry value="12">@Strings.WidgetDevBattery</listEntry>
+            <listEntry value="13">@Strings.WidgetAltitude</listEntry>
+            <listEntry value="14">@Strings.WidgetSunrise</listEntry>
+            <listEntry value="15">@Strings.WidgetSunset</listEntry>
+            <listEntry value="16">@Strings.WidgetSpO2</listEntry>
+        </settingConfig>
+    </setting>
 </settings>

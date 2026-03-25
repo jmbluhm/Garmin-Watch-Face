@@ -1,0 +1,40 @@
+[ @file = "/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineDelegate.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [WatchUi,1,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineDelegate.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [System,2,13,19]; ]
+using Toybox.System;
+[ @file = "/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineDelegate.mc"; @line = 4; @symbol_classdef = [RedLineDelegate,4,6,21]; @symbol_extends<0> = [WatchUi,4,30,37]; @symbol_extends<1> = [WatchFaceDelegate,4,38,55]; ]
+class RedLineDelegate extends WatchUi.WatchFaceDelegate {
+    [ @file = "/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineDelegate.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineDelegate.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineDelegate.mc"; @line = 6; @symbol_functiondef = [initialize,6,13,23]; ]
+    function initialize() as Void {
+_Users_jordanbluhm_Documents_Development_garmin_face_1_source_RedLineDelegate_mc_6_26_8_4_start:
+[ "/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineDelegate.mc" 7 8 ]
+        symbol [ WatchFaceDelegate %tmp.2 7 8 25 ];
+        %tmp.2 = getv ? :WatchFaceDelegate;
+        symbol [ initialize %tmp.3 7 26 36 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_Users_jordanbluhm_Documents_Development_garmin_face_1_source_RedLineDelegate_mc_6_26_8_4_stop:
+    }
+    [ @file = "/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineDelegate.mc"; @line = 10; @symbol_functiondef = [onPowerBudgetExceeded,10,13,34]; @symbol_param<0> = [powerInfo,10,35,44]; ]
+    function onPowerBudgetExceeded(powerInfo) {
+_Users_jordanbluhm_Documents_Development_garmin_face_1_source_RedLineDelegate_mc_10_46_12_4_start:
+[ "/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineDelegate.mc" 11 8 ]
+        symbol [ System %tmp.1 11 8 14 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ println %tmp.2 11 15 22 ];
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "WARNING: Power budget exceeded in onPartialUpdate";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+_Users_jordanbluhm_Documents_Development_garmin_face_1_source_RedLineDelegate_mc_10_46_12_4_stop:
+    }
+}
+[ @file = "/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineDelegate.mc"; @line = 1; ]
+<init> {
+}

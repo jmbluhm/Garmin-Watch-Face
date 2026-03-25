@@ -1,0 +1,865 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="1" lineNum="12" parent="globals/RedLineView" pc="268435457" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineApp.mc" id="2" lineNum="4" parent="globals/RedLineApp" pc="268435469" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/resources/properties/gen/006-B4375-00/source/Rez.mcgen" id="3" lineNum="7" parent="globals/Rez" pc="268435481" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineDelegate.mc" id="4" lineNum="4" parent="globals/RedLineDelegate" pc="268435501" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="5" lineNum="539" parent="globals/RedLineView" pc="268435513" symbol="_formatSteps"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="5" lineNum="540" parent="globals/RedLineView" pc="268435516" symbol="_formatSteps"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="5" lineNum="541" parent="globals/RedLineView" pc="268435525" symbol="_formatSteps"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="5" lineNum="542" parent="globals/RedLineView" pc="268435532" symbol="_formatSteps"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="5" lineNum="543" parent="globals/RedLineView" pc="268435539" symbol="_formatSteps"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="5" lineNum="544" parent="globals/RedLineView" pc="268435546" symbol="_formatSteps"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="5" lineNum="546" parent="globals/RedLineView" pc="268435574" symbol="_formatSteps"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="6" lineNum="214" parent="globals/RedLineView" pc="268435582" symbol="_drawTime"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="6" lineNum="215" parent="globals/RedLineView" pc="268435585" symbol="_drawTime"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="6" lineNum="216" parent="globals/RedLineView" pc="268435593" symbol="_drawTime"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="6" lineNum="217" parent="globals/RedLineView" pc="268435600" symbol="_drawTime"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="6" lineNum="218" parent="globals/RedLineView" pc="268435607" symbol="_drawTime"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="6" lineNum="218" parent="globals/RedLineView" pc="268435614" symbol="_drawTime"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="6" lineNum="220" parent="globals/RedLineView" pc="268435618" symbol="_drawTime"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="6" lineNum="221" parent="globals/RedLineView" pc="268435634" symbol="_drawTime"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="6" lineNum="222" parent="globals/RedLineView" pc="268435655" symbol="_drawTime"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="6" lineNum="224" parent="globals/RedLineView" pc="268435676" symbol="_drawTime"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="6" lineNum="225" parent="globals/RedLineView" pc="268435698" symbol="_drawTime"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="6" lineNum="227" parent="globals/RedLineView" pc="268435702" symbol="_drawTime"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="6" lineNum="228" parent="globals/RedLineView" pc="268435719" symbol="_drawTime"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="6" lineNum="231" parent="globals/RedLineView" pc="268435748" symbol="_drawTime"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="6" lineNum="232" parent="globals/RedLineView" pc="268435753" symbol="_drawTime"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="6" lineNum="233" parent="globals/RedLineView" pc="268435771" symbol="_drawTime"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="6" lineNum="234" parent="globals/RedLineView" pc="268435796" symbol="_drawTime"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="6" lineNum="235" parent="globals/RedLineView" pc="268435824" symbol="_drawTime"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="6" lineNum="236" parent="globals/RedLineView" pc="268435841" symbol="_drawTime"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="269" parent="globals/RedLineView" pc="268435858" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="270" parent="globals/RedLineView" pc="268435861" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="271" parent="globals/RedLineView" pc="268435865" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="272" parent="globals/RedLineView" pc="268435872" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="274" parent="globals/RedLineView" pc="268435879" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="275" parent="globals/RedLineView" pc="268435881" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="281" parent="globals/RedLineView" pc="268435897" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="287" parent="globals/RedLineView" pc="268435913" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="293" parent="globals/RedLineView" pc="268435929" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="300" parent="globals/RedLineView" pc="268435945" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="306" parent="globals/RedLineView" pc="268435961" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="312" parent="globals/RedLineView" pc="268435977" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="318" parent="globals/RedLineView" pc="268435993" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="324" parent="globals/RedLineView" pc="268436009" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="330" parent="globals/RedLineView" pc="268436025" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="337" parent="globals/RedLineView" pc="268436041" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="343" parent="globals/RedLineView" pc="268436057" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="349" parent="globals/RedLineView" pc="268436073" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="356" parent="globals/RedLineView" pc="268436089" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="362" parent="globals/RedLineView" pc="268436105" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="368" parent="globals/RedLineView" pc="268436121" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="276" parent="globals/RedLineView" pc="268436140" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="277" parent="globals/RedLineView" pc="268436155" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="278" parent="globals/RedLineView" pc="268436172" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="280" parent="globals/RedLineView" pc="268436187" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="282" parent="globals/RedLineView" pc="268436190" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="283" parent="globals/RedLineView" pc="268436205" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="284" parent="globals/RedLineView" pc="268436211" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="286" parent="globals/RedLineView" pc="268436228" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="288" parent="globals/RedLineView" pc="268436231" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="289" parent="globals/RedLineView" pc="268436246" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="290" parent="globals/RedLineView" pc="268436263" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="292" parent="globals/RedLineView" pc="268436278" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="294" parent="globals/RedLineView" pc="268436281" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="295" parent="globals/RedLineView" pc="268436296" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="296" parent="globals/RedLineView" pc="268436313" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="297" parent="globals/RedLineView" pc="268436334" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="299" parent="globals/RedLineView" pc="268436350" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="301" parent="globals/RedLineView" pc="268436353" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="302" parent="globals/RedLineView" pc="268436368" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="303" parent="globals/RedLineView" pc="268436396" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="305" parent="globals/RedLineView" pc="268436411" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="307" parent="globals/RedLineView" pc="268436414" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="308" parent="globals/RedLineView" pc="268436429" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="309" parent="globals/RedLineView" pc="268436457" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="311" parent="globals/RedLineView" pc="268436477" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="313" parent="globals/RedLineView" pc="268436480" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="314" parent="globals/RedLineView" pc="268436495" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="315" parent="globals/RedLineView" pc="268436523" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="317" parent="globals/RedLineView" pc="268436538" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="319" parent="globals/RedLineView" pc="268436541" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="320" parent="globals/RedLineView" pc="268436556" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="321" parent="globals/RedLineView" pc="268436584" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="323" parent="globals/RedLineView" pc="268436599" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="325" parent="globals/RedLineView" pc="268436602" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="326" parent="globals/RedLineView" pc="268436617" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="327" parent="globals/RedLineView" pc="268436645" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="329" parent="globals/RedLineView" pc="268436666" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="331" parent="globals/RedLineView" pc="268436669" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="332" parent="globals/RedLineView" pc="268436684" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="333" parent="globals/RedLineView" pc="268436701" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="334" parent="globals/RedLineView" pc="268436740" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="336" parent="globals/RedLineView" pc="268436755" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="338" parent="globals/RedLineView" pc="268436758" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="339" parent="globals/RedLineView" pc="268436773" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="340" parent="globals/RedLineView" pc="268436801" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="342" parent="globals/RedLineView" pc="268436822" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="344" parent="globals/RedLineView" pc="268436825" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="345" parent="globals/RedLineView" pc="268436840" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="346" parent="globals/RedLineView" pc="268436846" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="348" parent="globals/RedLineView" pc="268436873" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="350" parent="globals/RedLineView" pc="268436876" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="351" parent="globals/RedLineView" pc="268436891" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="352" parent="globals/RedLineView" pc="268436908" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="353" parent="globals/RedLineView" pc="268436929" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="355" parent="globals/RedLineView" pc="268436938" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="357" parent="globals/RedLineView" pc="268436941" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="358" parent="globals/RedLineView" pc="268436956" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="359" parent="globals/RedLineView" pc="268436984" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="361" parent="globals/RedLineView" pc="268437001" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="363" parent="globals/RedLineView" pc="268437004" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="364" parent="globals/RedLineView" pc="268437019" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="365" parent="globals/RedLineView" pc="268437047" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="367" parent="globals/RedLineView" pc="268437064" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="369" parent="globals/RedLineView" pc="268437067" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="370" parent="globals/RedLineView" pc="268437082" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="371" parent="globals/RedLineView" pc="268437110" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="373" parent="globals/RedLineView" pc="268437131" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="376" parent="globals/RedLineView" pc="268437135" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="7" lineNum="377" parent="globals/RedLineView" pc="268437152" symbol="_drawWidget"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="8" lineNum="450" parent="globals/RedLineView" pc="268437176" symbol="_drawRespirationIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="8" lineNum="451" parent="globals/RedLineView" pc="268437178" symbol="_drawRespirationIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="8" lineNum="452" parent="globals/RedLineView" pc="268437195" symbol="_drawRespirationIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="8" lineNum="453" parent="globals/RedLineView" pc="268437222" symbol="_drawRespirationIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="8" lineNum="454" parent="globals/RedLineView" pc="268437252" symbol="_drawRespirationIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="8" lineNum="455" parent="globals/RedLineView" pc="268437282" symbol="_drawRespirationIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="9" lineNum="466" parent="globals/RedLineView" pc="268437313" symbol="_drawHumidityIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="9" lineNum="467" parent="globals/RedLineView" pc="268437315" symbol="_drawHumidityIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="9" lineNum="468" parent="globals/RedLineView" pc="268437332" symbol="_drawHumidityIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="9" lineNum="469" parent="globals/RedLineView" pc="268437356" symbol="_drawHumidityIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="9" lineNum="470" parent="globals/RedLineView" pc="268437384" symbol="_drawHumidityIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="9" lineNum="471" parent="globals/RedLineView" pc="268437412" symbol="_drawHumidityIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="9" lineNum="472" parent="globals/RedLineView" pc="268437427" symbol="_drawHumidityIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="10" lineNum="506" parent="globals/RedLineView" pc="268437450" symbol="_drawSunsetIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="10" lineNum="507" parent="globals/RedLineView" pc="268437452" symbol="_drawSunsetIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="10" lineNum="508" parent="globals/RedLineView" pc="268437469" symbol="_drawSunsetIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="10" lineNum="509" parent="globals/RedLineView" pc="268437491" symbol="_drawSunsetIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="10" lineNum="510" parent="globals/RedLineView" pc="268437504" symbol="_drawSunsetIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="10" lineNum="511" parent="globals/RedLineView" pc="268437525" symbol="_drawSunsetIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="10" lineNum="512" parent="globals/RedLineView" pc="268437542" symbol="_drawSunsetIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="10" lineNum="514" parent="globals/RedLineView" pc="268437569" symbol="_drawSunsetIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="10" lineNum="515" parent="globals/RedLineView" pc="268437599" symbol="_drawSunsetIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="11" lineNum="493" parent="globals/RedLineView" pc="268437630" symbol="_drawSunriseIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="11" lineNum="494" parent="globals/RedLineView" pc="268437632" symbol="_drawSunriseIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="11" lineNum="495" parent="globals/RedLineView" pc="268437649" symbol="_drawSunriseIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="11" lineNum="496" parent="globals/RedLineView" pc="268437671" symbol="_drawSunriseIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="11" lineNum="497" parent="globals/RedLineView" pc="268437684" symbol="_drawSunriseIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="11" lineNum="498" parent="globals/RedLineView" pc="268437705" symbol="_drawSunriseIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="11" lineNum="499" parent="globals/RedLineView" pc="268437722" symbol="_drawSunriseIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="11" lineNum="501" parent="globals/RedLineView" pc="268437749" symbol="_drawSunriseIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="11" lineNum="502" parent="globals/RedLineView" pc="268437776" symbol="_drawSunriseIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="12" lineNum="403" parent="globals/RedLineView" pc="268437804" symbol="_drawCaloriesIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="12" lineNum="404" parent="globals/RedLineView" pc="268437806" symbol="_drawCaloriesIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="12" lineNum="405" parent="globals/RedLineView" pc="268437823" symbol="_drawCaloriesIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="12" lineNum="406" parent="globals/RedLineView" pc="268437847" symbol="_drawCaloriesIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="12" lineNum="407" parent="globals/RedLineView" pc="268437875" symbol="_drawCaloriesIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="12" lineNum="408" parent="globals/RedLineView" pc="268437903" symbol="_drawCaloriesIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="12" lineNum="409" parent="globals/RedLineView" pc="268437931" symbol="_drawCaloriesIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="12" lineNum="410" parent="globals/RedLineView" pc="268437959" symbol="_drawCaloriesIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="13" lineNum="549" parent="globals/RedLineView" pc="268437975" symbol="_formatMomentTime"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="13" lineNum="550" parent="globals/RedLineView" pc="268437978" symbol="_formatMomentTime"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="13" lineNum="551" parent="globals/RedLineView" pc="268437995" symbol="_formatMomentTime"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="13" lineNum="552" parent="globals/RedLineView" pc="268438006" symbol="_formatMomentTime"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="13" lineNum="552" parent="globals/RedLineView" pc="268438013" symbol="_formatMomentTime"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="13" lineNum="553" parent="globals/RedLineView" pc="268438017" symbol="_formatMomentTime"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="14" lineNum="260" parent="globals/RedLineView" pc="268438051" symbol="_drawDataGrid"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="14" lineNum="261" parent="globals/RedLineView" pc="268438054" symbol="_drawDataGrid"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="14" lineNum="262" parent="globals/RedLineView" pc="268438065" symbol="_drawDataGrid"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="14" lineNum="263" parent="globals/RedLineView" pc="268438078" symbol="_drawDataGrid"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="15" lineNum="116" parent="globals/RedLineView" pc="268438132" symbol="onLayout"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="15" lineNum="117" parent="globals/RedLineView" pc="268438135" symbol="onLayout"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="15" lineNum="118" parent="globals/RedLineView" pc="268438149" symbol="onLayout"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="15" lineNum="119" parent="globals/RedLineView" pc="268438163" symbol="onLayout"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="15" lineNum="120" parent="globals/RedLineView" pc="268438178" symbol="onLayout"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="15" lineNum="123" parent="globals/RedLineView" pc="268438193" symbol="onLayout"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="15" lineNum="126" parent="globals/RedLineView" pc="268438231" symbol="onLayout"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="15" lineNum="127" parent="globals/RedLineView" pc="268438252" symbol="onLayout"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="15" lineNum="128" parent="globals/RedLineView" pc="268438270" symbol="onLayout"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="15" lineNum="130" parent="globals/RedLineView" pc="268438288" symbol="onLayout"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="15" lineNum="131" parent="globals/RedLineView" pc="268438309" symbol="onLayout"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="15" lineNum="136" parent="globals/RedLineView" pc="268438378" symbol="onLayout"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="15" lineNum="137" parent="globals/RedLineView" pc="268438396" symbol="onLayout"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="15" lineNum="138" parent="globals/RedLineView" pc="268438414" symbol="onLayout"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="15" lineNum="139" parent="globals/RedLineView" pc="268438426" symbol="onLayout"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="15" lineNum="140" parent="globals/RedLineView" pc="268438459" symbol="onLayout"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="15" lineNum="141" parent="globals/RedLineView" pc="268438477" symbol="onLayout"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="15" lineNum="144" parent="globals/RedLineView" pc="268438495" symbol="onLayout"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="15" lineNum="145" parent="globals/RedLineView" pc="268438519" symbol="onLayout"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="15" lineNum="148" parent="globals/RedLineView" pc="268438543" symbol="onLayout"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="15" lineNum="149" parent="globals/RedLineView" pc="268438586" symbol="onLayout"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="15" lineNum="152" parent="globals/RedLineView" pc="268438629" symbol="onLayout"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="15" lineNum="153" parent="globals/RedLineView" pc="268438664" symbol="onLayout"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="15" lineNum="154" parent="globals/RedLineView" pc="268438723" symbol="onLayout"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="15" lineNum="155" parent="globals/RedLineView" pc="268438774" symbol="onLayout"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="15" lineNum="156" parent="globals/RedLineView" pc="268438809" symbol="onLayout"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="15" lineNum="157" parent="globals/RedLineView" pc="268438844" symbol="onLayout"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="15" lineNum="158" parent="globals/RedLineView" pc="268438879" symbol="onLayout"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="15" lineNum="160" parent="globals/RedLineView" pc="268438954" symbol="onLayout"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="16" lineNum="90" parent="globals/RedLineView" pc="268439063" symbol="loadSettings"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="16" lineNum="92" parent="globals/RedLineView" pc="268439066" symbol="loadSettings"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="16" lineNum="93" parent="globals/RedLineView" pc="268439085" symbol="loadSettings"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="16" lineNum="94" parent="globals/RedLineView" pc="268439102" symbol="loadSettings"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="16" lineNum="96" parent="globals/RedLineView" pc="268439114" symbol="loadSettings"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="16" lineNum="99" parent="globals/RedLineView" pc="268439126" symbol="loadSettings"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="16" lineNum="100" parent="globals/RedLineView" pc="268439140" symbol="loadSettings"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="16" lineNum="101" parent="globals/RedLineView" pc="268439154" symbol="loadSettings"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="16" lineNum="102" parent="globals/RedLineView" pc="268439165" symbol="loadSettings"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="16" lineNum="103" parent="globals/RedLineView" pc="268439195" symbol="loadSettings"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="16" lineNum="106" parent="globals/RedLineView" pc="268439225" symbol="loadSettings"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="16" lineNum="107" parent="globals/RedLineView" pc="268439244" symbol="loadSettings"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="16" lineNum="108" parent="globals/RedLineView" pc="268439263" symbol="loadSettings"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="16" lineNum="109" parent="globals/RedLineView" pc="268439282" symbol="loadSettings"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="16" lineNum="110" parent="globals/RedLineView" pc="268439301" symbol="loadSettings"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="16" lineNum="111" parent="globals/RedLineView" pc="268439332" symbol="loadSettings"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="16" lineNum="112" parent="globals/RedLineView" pc="268439364" symbol="loadSettings"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="16" lineNum="113" parent="globals/RedLineView" pc="268439396" symbol="loadSettings"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="17" lineNum="184" parent="globals/RedLineView" pc="268439429" symbol="onPartialUpdate"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="17" lineNum="185" parent="globals/RedLineView" pc="268439432" symbol="onPartialUpdate"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="17" lineNum="186" parent="globals/RedLineView" pc="268439444" symbol="onPartialUpdate"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="17" lineNum="187" parent="globals/RedLineView" pc="268439463" symbol="onPartialUpdate"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="17" lineNum="189" parent="globals/RedLineView" pc="268439473" symbol="onPartialUpdate"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="17" lineNum="190" parent="globals/RedLineView" pc="268439493" symbol="onPartialUpdate"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="17" lineNum="191" parent="globals/RedLineView" pc="268439505" symbol="onPartialUpdate"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="17" lineNum="192" parent="globals/RedLineView" pc="268439525" symbol="onPartialUpdate"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="17" lineNum="193" parent="globals/RedLineView" pc="268439538" symbol="onPartialUpdate"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="18" lineNum="459" parent="globals/RedLineView" pc="268439547" symbol="_drawTempIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="18" lineNum="460" parent="globals/RedLineView" pc="268439549" symbol="_drawTempIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="18" lineNum="461" parent="globals/RedLineView" pc="268439566" symbol="_drawTempIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="18" lineNum="462" parent="globals/RedLineView" pc="268439587" symbol="_drawTempIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="19" lineNum="196" parent="globals/RedLineView" pc="268439610" symbol="onEnterSleep"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="19" lineNum="197" parent="globals/RedLineView" pc="268439612" symbol="onEnterSleep"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="20" lineNum="384" parent="globals/RedLineView" pc="268439621" symbol="_drawHeartIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="20" lineNum="385" parent="globals/RedLineView" pc="268439623" symbol="_drawHeartIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="20" lineNum="386" parent="globals/RedLineView" pc="268439640" symbol="_drawHeartIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="20" lineNum="387" parent="globals/RedLineView" pc="268439659" symbol="_drawHeartIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="20" lineNum="388" parent="globals/RedLineView" pc="268439678" symbol="_drawHeartIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="20" lineNum="389" parent="globals/RedLineView" pc="268439702" symbol="_drawHeartIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="20" lineNum="390" parent="globals/RedLineView" pc="268439730" symbol="_drawHeartIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="20" lineNum="391" parent="globals/RedLineView" pc="268439758" symbol="_drawHeartIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="21" lineNum="526" parent="globals/RedLineView" pc="268439774" symbol="_drawBoltIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="21" lineNum="527" parent="globals/RedLineView" pc="268439776" symbol="_drawBoltIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="21" lineNum="528" parent="globals/RedLineView" pc="268439793" symbol="_drawBoltIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="21" lineNum="529" parent="globals/RedLineView" pc="268439817" symbol="_drawBoltIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="21" lineNum="530" parent="globals/RedLineView" pc="268439845" symbol="_drawBoltIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="21" lineNum="531" parent="globals/RedLineView" pc="268439873" symbol="_drawBoltIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="21" lineNum="532" parent="globals/RedLineView" pc="268439901" symbol="_drawBoltIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="21" lineNum="533" parent="globals/RedLineView" pc="268439929" symbol="_drawBoltIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="21" lineNum="534" parent="globals/RedLineView" pc="268439957" symbol="_drawBoltIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="22" lineNum="432" parent="globals/RedLineView" pc="268439973" symbol="_drawActiveMinIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="22" lineNum="433" parent="globals/RedLineView" pc="268439975" symbol="_drawActiveMinIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="22" lineNum="434" parent="globals/RedLineView" pc="268439992" symbol="_drawActiveMinIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="22" lineNum="435" parent="globals/RedLineView" pc="268440014" symbol="_drawActiveMinIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="22" lineNum="436" parent="globals/RedLineView" pc="268440044" symbol="_drawActiveMinIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="23" lineNum="484" parent="globals/RedLineView" pc="268440075" symbol="_drawAltitudeIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="23" lineNum="485" parent="globals/RedLineView" pc="268440077" symbol="_drawAltitudeIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="23" lineNum="486" parent="globals/RedLineView" pc="268440094" symbol="_drawAltitudeIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="23" lineNum="487" parent="globals/RedLineView" pc="268440118" symbol="_drawAltitudeIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="23" lineNum="488" parent="globals/RedLineView" pc="268440146" symbol="_drawAltitudeIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="23" lineNum="489" parent="globals/RedLineView" pc="268440171" symbol="_drawAltitudeIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="24" lineNum="519" parent="globals/RedLineView" pc="268440187" symbol="_drawSpO2Icon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="24" lineNum="520" parent="globals/RedLineView" pc="268440189" symbol="_drawSpO2Icon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="24" lineNum="521" parent="globals/RedLineView" pc="268440206" symbol="_drawSpO2Icon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="24" lineNum="522" parent="globals/RedLineView" pc="268440228" symbol="_drawSpO2Icon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="25" lineNum="414" parent="globals/RedLineView" pc="268440251" symbol="_drawDistanceIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="25" lineNum="415" parent="globals/RedLineView" pc="268440253" symbol="_drawDistanceIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="25" lineNum="416" parent="globals/RedLineView" pc="268440270" symbol="_drawDistanceIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="25" lineNum="417" parent="globals/RedLineView" pc="268440291" symbol="_drawDistanceIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="25" lineNum="418" parent="globals/RedLineView" pc="268440318" symbol="_drawDistanceIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="25" lineNum="419" parent="globals/RedLineView" pc="268440346" symbol="_drawDistanceIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="25" lineNum="420" parent="globals/RedLineView" pc="268440374" symbol="_drawDistanceIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="26" lineNum="395" parent="globals/RedLineView" pc="268440390" symbol="_drawStepsIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="26" lineNum="396" parent="globals/RedLineView" pc="268440392" symbol="_drawStepsIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="26" lineNum="397" parent="globals/RedLineView" pc="268440409" symbol="_drawStepsIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="26" lineNum="398" parent="globals/RedLineView" pc="268440430" symbol="_drawStepsIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="26" lineNum="399" parent="globals/RedLineView" pc="268440454" symbol="_drawStepsIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="27" lineNum="206" parent="globals/RedLineView" pc="268440476" symbol="_drawBatteryText"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="27" lineNum="207" parent="globals/RedLineView" pc="268440479" symbol="_drawBatteryText"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="27" lineNum="208" parent="globals/RedLineView" pc="268440498" symbol="_drawBatteryText"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="27" lineNum="209" parent="globals/RedLineView" pc="268440519" symbol="_drawBatteryText"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="27" lineNum="210" parent="globals/RedLineView" pc="268440536" symbol="_drawBatteryText"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="28" lineNum="200" parent="globals/RedLineView" pc="268440563" symbol="onExitSleep"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="28" lineNum="201" parent="globals/RedLineView" pc="268440565" symbol="onExitSleep"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="29" lineNum="252" parent="globals/RedLineView" pc="268440574" symbol="_drawDivider"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="29" lineNum="253" parent="globals/RedLineView" pc="268440577" symbol="_drawDivider"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="29" lineNum="254" parent="globals/RedLineView" pc="268440590" symbol="_drawDivider"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="29" lineNum="255" parent="globals/RedLineView" pc="268440607" symbol="_drawDivider"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="30" lineNum="240" parent="globals/RedLineView" pc="268440638" symbol="_drawDate"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="30" lineNum="241" parent="globals/RedLineView" pc="268440641" symbol="_drawDate"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="30" lineNum="242" parent="globals/RedLineView" pc="268440655" symbol="_drawDate"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="30" lineNum="243" parent="globals/RedLineView" pc="268440669" symbol="_drawDate"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="30" lineNum="245" parent="globals/RedLineView" pc="268440690" symbol="_drawDate"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="30" lineNum="247" parent="globals/RedLineView" pc="268440712" symbol="_drawDate"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="30" lineNum="248" parent="globals/RedLineView" pc="268440729" symbol="_drawDate"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="31" lineNum="424" parent="globals/RedLineView" pc="268440756" symbol="_drawFloorsIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="31" lineNum="425" parent="globals/RedLineView" pc="268440758" symbol="_drawFloorsIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="31" lineNum="426" parent="globals/RedLineView" pc="268440775" symbol="_drawFloorsIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="31" lineNum="427" parent="globals/RedLineView" pc="268440796" symbol="_drawFloorsIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="31" lineNum="428" parent="globals/RedLineView" pc="268440820" symbol="_drawFloorsIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="32" lineNum="476" parent="globals/RedLineView" pc="268440842" symbol="_drawDevBattIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="32" lineNum="477" parent="globals/RedLineView" pc="268440844" symbol="_drawDevBattIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="32" lineNum="478" parent="globals/RedLineView" pc="268440861" symbol="_drawDevBattIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="32" lineNum="479" parent="globals/RedLineView" pc="268440882" symbol="_drawDevBattIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="32" lineNum="480" parent="globals/RedLineView" pc="268440906" symbol="_drawDevBattIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="33" lineNum="440" parent="globals/RedLineView" pc="268440931" symbol="_drawStressIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="33" lineNum="441" parent="globals/RedLineView" pc="268440933" symbol="_drawStressIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="33" lineNum="442" parent="globals/RedLineView" pc="268440950" symbol="_drawStressIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="33" lineNum="443" parent="globals/RedLineView" pc="268440977" symbol="_drawStressIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="33" lineNum="444" parent="globals/RedLineView" pc="268441004" symbol="_drawStressIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="33" lineNum="445" parent="globals/RedLineView" pc="268441031" symbol="_drawStressIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="33" lineNum="446" parent="globals/RedLineView" pc="268441061" symbol="_drawStressIcon"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="34" lineNum="85" parent="globals/RedLineView" pc="268441092" symbol="initialize"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="34" lineNum="86" parent="globals/RedLineView" pc="268441094" symbol="initialize"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="34" lineNum="87" parent="globals/RedLineView" pc="268441106" symbol="initialize"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="35" lineNum="166" parent="globals/RedLineView" pc="268441114" symbol="onUpdate"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="35" lineNum="167" parent="globals/RedLineView" pc="268441117" symbol="onUpdate"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="35" lineNum="168" parent="globals/RedLineView" pc="268441129" symbol="onUpdate"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="35" lineNum="170" parent="globals/RedLineView" pc="268441137" symbol="onUpdate"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="35" lineNum="171" parent="globals/RedLineView" pc="268441149" symbol="onUpdate"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="35" lineNum="172" parent="globals/RedLineView" pc="268441174" symbol="onUpdate"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="35" lineNum="173" parent="globals/RedLineView" pc="268441186" symbol="onUpdate"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="35" lineNum="174" parent="globals/RedLineView" pc="268441198" symbol="onUpdate"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="35" lineNum="175" parent="globals/RedLineView" pc="268441210" symbol="onUpdate"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="35" lineNum="177" parent="globals/RedLineView" pc="268441222" symbol="onUpdate"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="35" lineNum="178" parent="globals/RedLineView" pc="268441235" symbol="onUpdate"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="35" lineNum="179" parent="globals/RedLineView" pc="268441248" symbol="onUpdate"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="35" lineNum="180" parent="globals/RedLineView" pc="268441261" symbol="onUpdate"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineView.mc" id="35" lineNum="181" parent="globals/RedLineView" pc="268441272" symbol="onUpdate"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineApp.mc" id="37" lineNum="23" parent="globals/RedLineApp" pc="268441292" symbol="onSettingsChanged"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineApp.mc" id="37" lineNum="24" parent="globals/RedLineApp" pc="268441294" symbol="onSettingsChanged"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineApp.mc" id="37" lineNum="25" parent="globals/RedLineApp" pc="268441306" symbol="onSettingsChanged"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineApp.mc" id="38" lineNum="18" parent="globals/RedLineApp" pc="268441318" symbol="getInitialView"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineApp.mc" id="38" lineNum="19" parent="globals/RedLineApp" pc="268441320" symbol="getInitialView"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineApp.mc" id="38" lineNum="20" parent="globals/RedLineApp" pc="268441345" symbol="getInitialView"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineApp.mc" id="39" lineNum="8" parent="globals/RedLineApp" pc="268441379" symbol="initialize"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineApp.mc" id="39" lineNum="9" parent="globals/RedLineApp" pc="268441381" symbol="initialize"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineDelegate.mc" id="41" lineNum="6" parent="globals/RedLineDelegate" pc="268441394" symbol="initialize"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineDelegate.mc" id="41" lineNum="7" parent="globals/RedLineDelegate" pc="268441396" symbol="initialize"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineDelegate.mc" id="42" lineNum="10" parent="globals/RedLineDelegate" pc="268441409" symbol="onPowerBudgetExceeded"/>
+        <entry filename="/Users/jordanbluhm/Documents/Development/garmin/face-1/source/RedLineDelegate.mc" id="42" lineNum="11" parent="globals/RedLineDelegate" pc="268441411" symbol="onPowerBudgetExceeded"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry field="true" id="57" symbol="_xLeft"/>
+        <entry id="22" method="true" symbol="_drawBoltIcon"/>
+        <entry field="true" id="60" symbol="_yDate"/>
+        <entry field="true" id="9" symbol="CLR_GHOST"/>
+        <entry field="true" id="81" symbol="Widget1Title"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry field="true" id="76" symbol="ColorPurple"/>
+        <entry field="true" id="8391583" symbol="currentOxygenSaturation"/>
+        <entry id="31" method="true" symbol="_drawHumidityIcon"/>
+        <entry field="true" id="73" symbol="ColorGreen"/>
+        <entry id="8389683" method="true" symbol="onSettingsChanged"/>
+        <entry field="true" id="80" symbol="ColorYellow"/>
+        <entry id="36" method="true" symbol="_drawSunriseIcon"/>
+        <entry id="8390098" method="true" symbol="onPowerBudgetExceeded"/>
+        <entry field="true" id="77" symbol="ColorRed"/>
+        <entry field="true" id="51" symbol="_sleeping"/>
+        <entry id="39" method="true" symbol="_drawTime"/>
+        <entry id="30" method="true" symbol="_drawHeartIcon"/>
+        <entry field="true" id="91" symbol="WidgetFloors"/>
+        <entry id="34" method="true" symbol="_drawStepsIcon"/>
+        <entry field="true" id="83" symbol="Widget3Title"/>
+        <entry field="true" id="10" symbol="CLR_PRIMARY"/>
+        <entry field="true" id="58" symbol="_xRight"/>
+        <entry id="8388924" module="true" symbol="Gregorian"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry field="true" id="64" symbol="_yTime"/>
+        <entry id="102" symbol="bodyBattery"/>
+        <entry field="true" id="71" symbol="ColorBlue"/>
+        <entry field="true" id="69" symbol="AppName"/>
+        <entry id="8388633" module="true" symbol="ActivityMonitor"/>
+        <entry id="5" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8388772" module="true" object="true" symbol="Fonts"/>
+        <entry id="8388631" module="true" symbol="Activity"/>
+        <entry id="7" object="true" symbol="RedLineDelegate"/>
+        <entry id="44" method="true" symbol="_formatSteps"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry field="true" id="74" symbol="ColorOrange"/>
+        <entry field="true" id="11" symbol="CLR_SECONDARY"/>
+        <entry id="8390097" method="true" symbol="onPartialUpdate"/>
+        <entry field="true" id="13" symbol="_boltPoly"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry field="true" id="8391831" symbol="respirationRate"/>
+        <entry id="26" method="true" symbol="_drawDevBattIcon"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry field="true" id="68" symbol="DSEG7Time"/>
+        <entry id="50" symbol="_monNames"/>
+        <entry id="8391489" module="true" symbol="Weather"/>
+        <entry field="true" id="8391673" symbol="relativeHumidity"/>
+        <entry id="23" method="true" symbol="_drawCaloriesIcon"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry field="true" id="93" symbol="WidgetHumidity"/>
+        <entry field="true" id="14" symbol="_calPoly"/>
+        <entry field="true" id="8389869" symbol="activeMinutesWeek"/>
+        <entry field="true" id="96" symbol="WidgetSpO2"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry id="8389376" method="true" symbol="onEnterSleep"/>
+        <entry id="21" method="true" symbol="_drawBatteryText"/>
+        <entry field="true" id="72" symbol="ColorCyan"/>
+        <entry field="true" id="89" symbol="WidgetDevBattery"/>
+        <entry field="true" id="88" symbol="WidgetCalories"/>
+        <entry id="38" method="true" symbol="_drawTempIcon"/>
+        <entry id="55" symbol="_widgetSlots"/>
+        <entry id="104" symbol="sunrise"/>
+        <entry field="true" id="92" symbol="WidgetHeartRate"/>
+        <entry field="true" id="95" symbol="WidgetRespiration"/>
+        <entry id="33" method="true" symbol="_drawSpO2Icon"/>
+        <entry field="true" id="12" symbol="_altPoly"/>
+        <entry field="true" id="79" symbol="ColorWhite"/>
+        <entry field="true" id="63" symbol="_yGrid2"/>
+        <entry field="true" id="62" symbol="_yGrid1"/>
+        <entry field="true" id="101" symbol="WidgetTemperature"/>
+        <entry field="true" id="100" symbol="WidgetSunset"/>
+        <entry id="28" method="true" symbol="_drawDivider"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="29" method="true" symbol="_drawFloorsIcon"/>
+        <entry id="20" method="true" symbol="_drawAltitudeIcon"/>
+        <entry field="true" id="45" symbol="_hSmall"/>
+        <entry field="true" id="98" symbol="WidgetStress"/>
+        <entry id="17" symbol="_dayNames"/>
+        <entry field="true" id="82" symbol="Widget2Title"/>
+        <entry field="true" id="54" symbol="_sunPoly"/>
+        <entry id="6" object="true" symbol="RedLineApp"/>
+        <entry field="true" id="53" symbol="_slotYs"/>
+        <entry field="true" id="86" symbol="WidgetAltitude"/>
+        <entry field="true" id="16" symbol="_cy"/>
+        <entry field="true" id="15" symbol="_cx"/>
+        <entry id="8389377" method="true" symbol="onExitSleep"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry field="true" id="52" symbol="_slotXs"/>
+        <entry id="24" method="true" symbol="_drawDataGrid"/>
+        <entry field="true" id="41" symbol="_dropPoly"/>
+        <entry field="true" id="18" symbol="_distPoly"/>
+        <entry id="8388645" module="true" symbol="Time"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry field="true" id="90" symbol="WidgetDistance"/>
+        <entry id="27" method="true" symbol="_drawDistanceIcon"/>
+        <entry field="true" id="61" symbol="_yDivider"/>
+        <entry id="19" method="true" symbol="_drawActiveMinIcon"/>
+        <entry field="true" id="94" symbol="WidgetNone"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry id="35" method="true" symbol="_drawStressIcon"/>
+        <entry field="true" id="84" symbol="Widget4Title"/>
+        <entry field="true" id="67" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry field="true" id="42" symbol="&lt;globals/RedLineView/&lt;&gt;_fontTime&gt;"/>
+        <entry field="true" id="87" symbol="WidgetBodyBattery"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry field="true" id="48" symbol="_heartPoly"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry field="true" id="59" symbol="_yBattText"/>
+        <entry field="true" id="97" symbol="WidgetSteps"/>
+        <entry field="true" id="66" symbol="_view"/>
+        <entry field="true" id="8389872" symbol="floorsClimbed"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry id="8" object="true" symbol="RedLineView"/>
+        <entry id="32" method="true" symbol="_drawRespirationIcon"/>
+        <entry field="true" id="56" symbol="_width"/>
+        <entry id="40" method="true" symbol="_drawWidget"/>
+        <entry id="43" method="true" symbol="_formatMomentTime"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry field="true" id="70" symbol="ColorAmber"/>
+        <entry field="true" id="75" symbol="ColorPink"/>
+        <entry id="65" method="true" symbol="loadSettings"/>
+        <entry id="37" method="true" symbol="_drawSunsetIcon"/>
+        <entry field="true" id="85" symbol="WidgetActiveMin"/>
+        <entry id="105" symbol="sunset"/>
+        <entry id="25" method="true" symbol="_drawDate"/>
+        <entry id="4" module="true" symbol="globals/Rez/Fonts"/>
+        <entry field="true" id="47" symbol="_hTiny"/>
+        <entry field="true" id="46" symbol="_hTime"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+        <entry field="true" id="78" symbol="ColorTitle"/>
+        <entry field="true" id="49" symbol="_height"/>
+        <entry field="true" id="99" symbol="WidgetSunrise"/>
+        <entry id="103" symbol="stress"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268435581" name="steps" stackId="1" startPc="268435513"/>
+        <entry arg="true" endPc="268435857" name="dc" stackId="1" startPc="268435582"/>
+        <entry arg="true" endPc="268435857" name="clockTime" stackId="2" startPc="268435582"/>
+        <entry endPc="268435856" name="h24" stackId="3" startPc="268435585"/>
+        <entry endPc="268435856" name="isPM" stackId="4" startPc="268435585"/>
+        <entry endPc="268435856" name="h12" stackId="5" startPc="268435585"/>
+        <entry endPc="268435856" name="hrStr" stackId="6" startPc="268435585"/>
+        <entry endPc="268435856" name="minStr" stackId="7" startPc="268435585"/>
+        <entry endPc="268435856" name="secStr" stackId="8" startPc="268435585"/>
+        <entry endPc="268435856" name="timeStr" stackId="9" startPc="268435585"/>
+        <entry endPc="268435856" name="justify" stackId="10" startPc="268435585"/>
+        <entry endPc="268435856" name="timeW" stackId="11" startPc="268435753"/>
+        <entry endPc="268435856" name="dotX" stackId="12" startPc="268435753"/>
+        <entry endPc="268435856" name="dotY" stackId="13" startPc="268435753"/>
+        <entry arg="true" endPc="268437175" name="dc" stackId="1" startPc="268435858"/>
+        <entry arg="true" endPc="268437175" name="x" stackId="2" startPc="268435858"/>
+        <entry arg="true" endPc="268437175" name="y" stackId="3" startPc="268435858"/>
+        <entry arg="true" endPc="268437175" name="wType" stackId="4" startPc="268435858"/>
+        <entry arg="true" endPc="268437175" name="actInfo" stackId="5" startPc="268435858"/>
+        <entry arg="true" endPc="268437175" name="monInfo" stackId="6" startPc="268435858"/>
+        <entry arg="true" endPc="268437175" name="weather" stackId="7" startPc="268435858"/>
+        <entry arg="true" endPc="268437175" name="sysStat" stackId="8" startPc="268435858"/>
+        <entry endPc="268437174" name="iconX" stackId="9" startPc="268435861"/>
+        <entry endPc="268437174" name="iconY" stackId="10" startPc="268435861"/>
+        <entry endPc="268437174" name="val" stackId="11" startPc="268435861"/>
+        <entry endPc="268436349" name="mi" stackId="12" startPc="268436313"/>
+        <entry endPc="268436754" name="tempF" stackId="13" startPc="268436701"/>
+        <entry endPc="268436937" name="ft" stackId="14" startPc="268436908"/>
+        <entry arg="true" endPc="268437312" name="dc" stackId="1" startPc="268437176"/>
+        <entry arg="true" endPc="268437312" name="x" stackId="2" startPc="268437176"/>
+        <entry arg="true" endPc="268437312" name="y" stackId="3" startPc="268437176"/>
+        <entry arg="true" endPc="268437449" name="dc" stackId="1" startPc="268437313"/>
+        <entry arg="true" endPc="268437449" name="x" stackId="2" startPc="268437313"/>
+        <entry arg="true" endPc="268437449" name="y" stackId="3" startPc="268437313"/>
+        <entry arg="true" endPc="268437629" name="dc" stackId="1" startPc="268437450"/>
+        <entry arg="true" endPc="268437629" name="x" stackId="2" startPc="268437450"/>
+        <entry arg="true" endPc="268437629" name="y" stackId="3" startPc="268437450"/>
+        <entry arg="true" endPc="268437803" name="dc" stackId="1" startPc="268437630"/>
+        <entry arg="true" endPc="268437803" name="x" stackId="2" startPc="268437630"/>
+        <entry arg="true" endPc="268437803" name="y" stackId="3" startPc="268437630"/>
+        <entry arg="true" endPc="268437974" name="dc" stackId="1" startPc="268437804"/>
+        <entry arg="true" endPc="268437974" name="x" stackId="2" startPc="268437804"/>
+        <entry arg="true" endPc="268437974" name="y" stackId="3" startPc="268437804"/>
+        <entry arg="true" endPc="268438050" name="moment" stackId="1" startPc="268437975"/>
+        <entry arg="true" endPc="268438131" name="dc" stackId="1" startPc="268438051"/>
+        <entry arg="true" endPc="268438131" name="actInfo" stackId="2" startPc="268438051"/>
+        <entry arg="true" endPc="268438131" name="monInfo" stackId="3" startPc="268438051"/>
+        <entry arg="true" endPc="268438131" name="weather" stackId="4" startPc="268438051"/>
+        <entry arg="true" endPc="268438131" name="sysStat" stackId="5" startPc="268438051"/>
+        <entry endPc="268438130" name="i" stackId="6" startPc="268438065"/>
+        <entry arg="true" endPc="268439062" name="dc" stackId="1" startPc="268438132"/>
+        <entry endPc="268439061" name="testW" stackId="2" startPc="268438135"/>
+        <entry endPc="268439427" name="color" stackId="1" startPc="268439066"/>
+        <entry endPc="268439427" name="r" stackId="2" startPc="268439066"/>
+        <entry endPc="268439427" name="g" stackId="3" startPc="268439066"/>
+        <entry endPc="268439427" name="b" stackId="4" startPc="268439066"/>
+        <entry endPc="268439427" name="w1" stackId="5" startPc="268439066"/>
+        <entry endPc="268439427" name="w2" stackId="6" startPc="268439066"/>
+        <entry endPc="268439427" name="w3" stackId="7" startPc="268439066"/>
+        <entry endPc="268439427" name="w4" stackId="8" startPc="268439066"/>
+        <entry arg="true" endPc="268439546" name="dc" stackId="1" startPc="268439429"/>
+        <entry endPc="268439545" name="clockTime" stackId="2" startPc="268439432"/>
+        <entry endPc="268439545" name="clipY" stackId="3" startPc="268439432"/>
+        <entry endPc="268439545" name="clipH" stackId="4" startPc="268439432"/>
+        <entry arg="true" endPc="268439609" name="dc" stackId="1" startPc="268439547"/>
+        <entry arg="true" endPc="268439609" name="x" stackId="2" startPc="268439547"/>
+        <entry arg="true" endPc="268439609" name="y" stackId="3" startPc="268439547"/>
+        <entry arg="true" endPc="268439773" name="dc" stackId="1" startPc="268439621"/>
+        <entry arg="true" endPc="268439773" name="x" stackId="2" startPc="268439621"/>
+        <entry arg="true" endPc="268439773" name="y" stackId="3" startPc="268439621"/>
+        <entry arg="true" endPc="268439972" name="dc" stackId="1" startPc="268439774"/>
+        <entry arg="true" endPc="268439972" name="x" stackId="2" startPc="268439774"/>
+        <entry arg="true" endPc="268439972" name="y" stackId="3" startPc="268439774"/>
+        <entry arg="true" endPc="268440074" name="dc" stackId="1" startPc="268439973"/>
+        <entry arg="true" endPc="268440074" name="x" stackId="2" startPc="268439973"/>
+        <entry arg="true" endPc="268440074" name="y" stackId="3" startPc="268439973"/>
+        <entry arg="true" endPc="268440186" name="dc" stackId="1" startPc="268440075"/>
+        <entry arg="true" endPc="268440186" name="x" stackId="2" startPc="268440075"/>
+        <entry arg="true" endPc="268440186" name="y" stackId="3" startPc="268440075"/>
+        <entry arg="true" endPc="268440250" name="dc" stackId="1" startPc="268440187"/>
+        <entry arg="true" endPc="268440250" name="x" stackId="2" startPc="268440187"/>
+        <entry arg="true" endPc="268440250" name="y" stackId="3" startPc="268440187"/>
+        <entry arg="true" endPc="268440389" name="dc" stackId="1" startPc="268440251"/>
+        <entry arg="true" endPc="268440389" name="x" stackId="2" startPc="268440251"/>
+        <entry arg="true" endPc="268440389" name="y" stackId="3" startPc="268440251"/>
+        <entry arg="true" endPc="268440475" name="dc" stackId="1" startPc="268440390"/>
+        <entry arg="true" endPc="268440475" name="x" stackId="2" startPc="268440390"/>
+        <entry arg="true" endPc="268440475" name="y" stackId="3" startPc="268440390"/>
+        <entry arg="true" endPc="268440562" name="dc" stackId="1" startPc="268440476"/>
+        <entry arg="true" endPc="268440562" name="sysStat" stackId="2" startPc="268440476"/>
+        <entry endPc="268440561" name="batt" stackId="3" startPc="268440479"/>
+        <entry endPc="268440561" name="pctStr" stackId="4" startPc="268440479"/>
+        <entry arg="true" endPc="268440637" name="dc" stackId="1" startPc="268440574"/>
+        <entry endPc="268440636" name="divW" stackId="2" startPc="268440577"/>
+        <entry arg="true" endPc="268440755" name="dc" stackId="1" startPc="268440638"/>
+        <entry arg="true" endPc="268440755" name="now" stackId="2" startPc="268440638"/>
+        <entry endPc="268440754" name="dow" stackId="3" startPc="268440641"/>
+        <entry endPc="268440754" name="mon" stackId="4" startPc="268440641"/>
+        <entry endPc="268440754" name="day" stackId="5" startPc="268440641"/>
+        <entry endPc="268440754" name="fullStr" stackId="6" startPc="268440641"/>
+        <entry arg="true" endPc="268440841" name="dc" stackId="1" startPc="268440756"/>
+        <entry arg="true" endPc="268440841" name="x" stackId="2" startPc="268440756"/>
+        <entry arg="true" endPc="268440841" name="y" stackId="3" startPc="268440756"/>
+        <entry arg="true" endPc="268440930" name="dc" stackId="1" startPc="268440842"/>
+        <entry arg="true" endPc="268440930" name="x" stackId="2" startPc="268440842"/>
+        <entry arg="true" endPc="268440930" name="y" stackId="3" startPc="268440842"/>
+        <entry arg="true" endPc="268441091" name="dc" stackId="1" startPc="268440931"/>
+        <entry arg="true" endPc="268441091" name="x" stackId="2" startPc="268440931"/>
+        <entry arg="true" endPc="268441091" name="y" stackId="3" startPc="268440931"/>
+        <entry arg="true" endPc="268441291" name="dc" stackId="1" startPc="268441114"/>
+        <entry endPc="268441290" name="clockTime" stackId="2" startPc="268441117"/>
+        <entry endPc="268441290" name="now" stackId="3" startPc="268441117"/>
+        <entry endPc="268441290" name="actInfo" stackId="4" startPc="268441117"/>
+        <entry endPc="268441290" name="monInfo" stackId="5" startPc="268441117"/>
+        <entry endPc="268441290" name="sysStat" stackId="6" startPc="268441117"/>
+        <entry endPc="268441290" name="weather" stackId="7" startPc="268441117"/>
+        <entry arg="true" endPc="268441429" name="powerInfo" stackId="1" startPc="268441409"/>
+    </localVars>
+    <deviceInfo deviceVersion="5c7ae9cf907f88c116a91dc4ffd75be9b5b7d2e9" partNumber="006-B4375-00"/>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="DSEG7Time"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="WidgetBodyBattery"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorCyan"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorAmber"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="WidgetCalories"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorBlue"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="WidgetRespiration"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorPink"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorGreen"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorPurple"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="WidgetActiveMin"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="WidgetStress"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="Widget4Title"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="WidgetFloors"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="WidgetSunrise"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="Widget1Title"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorOrange"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="WidgetTemperature"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="WidgetAltitude"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorWhite"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="WidgetSteps"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="Widget2Title"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="WidgetSpO2"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorTitle"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorYellow"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorRed"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="WidgetNone"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="Widget3Title"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="WidgetDistance"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="WidgetSunset"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="WidgetHumidity"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="WidgetHeartRate"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="WidgetDevBattery"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="58" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/RedLineView" offset="125" parentId="globals" symbolId="RedLineView" type="class"/>
+        <dataEntry label="globals/RedLineApp" offset="727" parentId="globals" symbolId="RedLineApp" type="class"/>
+        <dataEntry label="globals/Rez" offset="816" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/RedLineDelegate" offset="869" parentId="globals" symbolId="RedLineDelegate" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="922" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Fonts" offset="957" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="992" parentId="Rez" symbolId="Strings" type="module"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435468" name="&lt;init&gt;" parent="RedLineView" startPc="268435457">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435480" name="&lt;init&gt;" parent="RedLineApp" startPc="268435469">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435500" name="&lt;init&gt;" parent="Rez" startPc="268435481">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435512" name="&lt;init&gt;" parent="RedLineDelegate" startPc="268435501">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435581" name="_formatSteps" parent="RedLineView" startPc="268435513">
+            <param id="steps"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435857" name="_drawTime" parent="RedLineView" startPc="268435582">
+            <param id="dc"/>
+            <param id="clockTime"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437175" name="_drawWidget" parent="RedLineView" startPc="268435858">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="y"/>
+            <param id="wType"/>
+            <param id="actInfo"/>
+            <param id="monInfo"/>
+            <param id="weather"/>
+            <param id="sysStat"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437312" name="_drawRespirationIcon" parent="RedLineView" startPc="268437176">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="y"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437449" name="_drawHumidityIcon" parent="RedLineView" startPc="268437313">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="y"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437629" name="_drawSunsetIcon" parent="RedLineView" startPc="268437450">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="y"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437803" name="_drawSunriseIcon" parent="RedLineView" startPc="268437630">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="y"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437974" name="_drawCaloriesIcon" parent="RedLineView" startPc="268437804">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="y"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438050" name="_formatMomentTime" parent="RedLineView" startPc="268437975">
+            <param id="moment"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438131" name="_drawDataGrid" parent="RedLineView" startPc="268438051">
+            <param id="dc"/>
+            <param id="actInfo"/>
+            <param id="monInfo"/>
+            <param id="weather"/>
+            <param id="sysStat"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439062" name="onLayout" parent="RedLineView" startPc="268438132">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439428" name="loadSettings" parent="RedLineView" startPc="268439063">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439546" name="onPartialUpdate" parent="RedLineView" startPc="268439429">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439609" name="_drawTempIcon" parent="RedLineView" startPc="268439547">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="y"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439620" name="onEnterSleep" parent="RedLineView" startPc="268439610">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439773" name="_drawHeartIcon" parent="RedLineView" startPc="268439621">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="y"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439972" name="_drawBoltIcon" parent="RedLineView" startPc="268439774">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="y"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440074" name="_drawActiveMinIcon" parent="RedLineView" startPc="268439973">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="y"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440186" name="_drawAltitudeIcon" parent="RedLineView" startPc="268440075">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="y"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440250" name="_drawSpO2Icon" parent="RedLineView" startPc="268440187">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="y"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440389" name="_drawDistanceIcon" parent="RedLineView" startPc="268440251">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="y"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440475" name="_drawStepsIcon" parent="RedLineView" startPc="268440390">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="y"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440562" name="_drawBatteryText" parent="RedLineView" startPc="268440476">
+            <param id="dc"/>
+            <param id="sysStat"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440573" name="onExitSleep" parent="RedLineView" startPc="268440563">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440637" name="_drawDivider" parent="RedLineView" startPc="268440574">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440755" name="_drawDate" parent="RedLineView" startPc="268440638">
+            <param id="dc"/>
+            <param id="now"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440841" name="_drawFloorsIcon" parent="RedLineView" startPc="268440756">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="y"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440930" name="_drawDevBattIcon" parent="RedLineView" startPc="268440842">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="y"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441091" name="_drawStressIcon" parent="RedLineView" startPc="268440931">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="y"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441113" name="initialize" parent="RedLineView" startPc="268441092">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441291" name="onUpdate" parent="RedLineView" startPc="268441114">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onStart" parent="RedLineApp">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441317" name="onSettingsChanged" parent="RedLineApp" startPc="268441292">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441378" name="getInitialView" parent="RedLineApp" startPc="268441318">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441393" name="initialize" parent="RedLineApp" startPc="268441379">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onStop" parent="RedLineApp">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Fonts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441408" name="initialize" parent="RedLineDelegate" startPc="268441394">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441429" name="onPowerBudgetExceeded" parent="RedLineDelegate" startPc="268441409">
+            <param id="powerInfo"/>
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

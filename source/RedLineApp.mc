@@ -21,7 +21,7 @@ class RedLineApp extends Application.AppBase {
     }
 
     function onSettingsChanged() {
-        _view.loadColorSetting();
+        _view.loadSettings();
         WatchUi.requestUpdate();
     }
 }
