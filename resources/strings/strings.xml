@@ -32,4 +32,7 @@
     <string id="WidgetSunrise">Sunrise</string>
     <string id="WidgetSunset">Sunset</string>
     <string id="WidgetSpO2">Blood Oxygen</string>
+    <string id="SettingBgTitle">Background</string>
+    <string id="SettingBgBlack">Black</string>
+    <string id="SettingBgWhite">White</string>
 </strings>

@@ -1,5 +1,6 @@
 <properties>
-    <property id="foregroundColor" type="number">13369617</property>
+    <property id="foregroundColor" type="number">16724736</property>
+    <property id="BackgroundColor" type="number">0</property>
     <property id="widget1" type="number">1</property>
     <property id="widget2" type="number">2</property>
     <property id="widget3" type="number">10</property>

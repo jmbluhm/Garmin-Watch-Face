@@ -8,6 +8,7 @@ using Toybox.Time.Gregorian;
 using Toybox.Activity;
 using Toybox.ActivityMonitor;
 using Toybox.Weather;
+using Toybox.Math;
 
 class RedLineView extends WatchUi.WatchFace {
 
@@ -31,10 +32,11 @@ class RedLineView extends WatchUi.WatchFace {
     hidden const W_SPO2        = 16;
 
     // Colors (loaded from settings)
-    hidden var CLR_PRIMARY   = 0xCC1111;
-    hidden var CLR_SECONDARY = 0x661111;
-    hidden var CLR_GHOST     = 0x330000;
-    hidden const CLR_BG      = 0x000000;
+    // Default: red-orange with high luminance for AMOLED visibility
+    hidden var CLR_PRIMARY   = 0xFF3300;
+    hidden var CLR_SECONDARY = 0xCC2200;
+    hidden var CLR_GHOST     = 0x881100;
+    hidden var CLR_BG        = 0x000000;
 
     // Day-of-week lookup (1=Sun per Gregorian)
     hidden var _dayNames = ["", "SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
@@ -60,6 +62,8 @@ class RedLineView extends WatchUi.WatchFace {
     var _yGrid2;
     var _xLeft;
     var _xRight;
+    var _xLeft2;
+    var _xRight2;
 
     // Pre-allocated slot coordinate arrays
     var _slotXs;
@@ -72,6 +76,9 @@ class RedLineView extends WatchUi.WatchFace {
 
     // Sleep state
     var _sleeping = false;
+
+    // Background preference
+    private var _bgWhite = false;
 
     // Pre-allocated polygon arrays for icons
     var _heartPoly;
@@ -93,14 +100,20 @@ class RedLineView extends WatchUi.WatchFace {
         if (color != null && color instanceof Number) {
             CLR_PRIMARY = color;
         } else {
-            CLR_PRIMARY = 0xCC1111;
+            CLR_PRIMARY = 0xFF3300;
         }
-        // Derive secondary (~50% brightness) and ghost (~25% brightness)
+        // Derive secondary (~80% brightness) and ghost (~53% brightness)
+        // Brighter ratios for AMOLED visibility when backlight is off
         var r = (CLR_PRIMARY >> 16) & 0xFF;
         var g = (CLR_PRIMARY >> 8) & 0xFF;
         var b = CLR_PRIMARY & 0xFF;
-        CLR_SECONDARY = ((r / 2) << 16) | ((g / 2) << 8) | (b / 2);
-        CLR_GHOST = ((r / 4) << 16) | ((g / 4) << 8) | (b / 4);
+        CLR_SECONDARY = ((r * 4 / 5) << 16) | ((g * 4 / 5) << 8) | (b * 4 / 5);
+        CLR_GHOST = ((r * 8 / 15) << 16) | ((g * 8 / 15) << 8) | (b * 8 / 15);
+
+        // Load background preference
+        var bgPref = Application.Properties.getValue("BackgroundColor");
+        _bgWhite = (bgPref != null && bgPref instanceof Number && bgPref == 1);
+        CLR_BG = _bgWhite ? 0xFFFFFF : 0x000000;
 
         // Load widget slots
         var w1 = Application.Properties.getValue("widget1");
@@ -132,20 +145,64 @@ class RedLineView extends WatchUi.WatchFace {
                        " hTiny=" + _hTiny + " timeW=" + testW +
                        " screen=" + _width);
 
-        // Proportional layout for round screen — maximize screen use
-        _yBattText = _height * 7 / 100;
-        _yDate     = _height * 21 / 100;
+        // Proportional layout — top chunk scooted down, compact widget grid
+        _yBattText = _height * 11 / 100;
+        _yDate     = _height * 25 / 100;
         _yTime     = _cy;
         _yDivider  = _yTime + _hTime / 2 + _height * 2 / 100;
-        _yGrid1    = _height * 63 / 100;
-        _yGrid2    = _height * 78 / 100;
+        _yGrid1    = _height * 68 / 100;
+        _yGrid2    = _height * 80 / 100;
 
-        // Grid x positions — wider spread to fill screen
-        _xLeft  = _cx - _width * 32 / 100;
-        _xRight = _cx + _width * 5 / 100;
+        // Top row grid x positions — symmetric anchors, 105px from centre
+        _xLeft  = _cx - 105;
+        _xRight = _cx + 5;
 
-        // Pre-allocate slot coordinate arrays
-        _slotXs = [_xLeft, _xRight, _xLeft, _xRight];
+        // Bottom row grid x positions — tighter horizontally (OK to be narrower)
+        _xLeft2  = _cx - 85;
+        _xRight2 = _cx + 5;
+
+        // Safe zone verification — check every row fits
+        var rows = [_yDate, _yTime, _yDivider, _yGrid1, _yGrid2, _yBattText];
+        var names = ["Date", "Time", "Divider", "Grid1", "Grid2", "Batt"];
+        for (var i = 0; i < rows.size(); i++) {
+            System.println(names[i] + " y=" + rows[i] +
+                           " safeWidth=" + (_safeHalfWidth(rows[i]) * 2));
+        }
+
+        // Check time row for clipping and report slack for font size iteration
+        var timeTestStr = "00:00:00";
+        var timeW = dc.getTextWidthInPixels(timeTestStr, _fontTime);
+        var safeW = _safeHalfWidth(_yTime) * 2;
+        var slack = safeW - timeW;
+        if (timeW > safeW) {
+            System.println("TIME TOO WIDE — reduce font size in fonts.xml by 2px (timeW=" + timeW + " safeW=" + safeW + ")");
+        } else {
+            System.println("Font fit OK: timeW=" + timeW + " safeW=" + safeW + " slack=" + slack + "px" +
+                           (slack > 20 ? " — consider increasing font size" : " — good fit"));
+        }
+
+        // Enforce safe width for top grid row
+        var safeG1 = _safeHalfWidth(_yGrid1);
+        var maxRight1 = _cx + safeG1 - 4;
+        if (_xRight + 80 > maxRight1) {
+            var shift = (_xRight + 80) - maxRight1;
+            _xLeft  = _xLeft  - shift;
+            _xRight = _xRight - shift;
+            System.println("Grid1 shifted inward by " + shift + "px");
+        }
+
+        // Enforce safe width for bottom grid row
+        var safeG2 = _safeHalfWidth(_yGrid2);
+        var maxRight2 = _cx + safeG2 - 4;
+        if (_xRight2 + 80 > maxRight2) {
+            var shift = (_xRight2 + 80) - maxRight2;
+            _xLeft2  = _xLeft2  - shift;
+            _xRight2 = _xRight2 - shift;
+            System.println("Grid2 shifted inward by " + shift + "px");
+        }
+
+        // Update slot coordinates — bottom row uses tighter x positions
+        _slotXs = [_xLeft, _xRight, _xLeft2, _xRight2];
         _slotYs = [_yGrid1, _yGrid1, _yGrid2, _yGrid2];
 
         // Pre-allocate icon polygons
@@ -168,6 +225,13 @@ class RedLineView extends WatchUi.WatchFace {
         dc.clear();
 
         var clockTime = System.getClockTime();
+
+        if (_sleeping) {
+            // Always-on mode: draw time only (fewer pixels = better battery)
+            _drawTime(dc, clockTime);
+            return;
+        }
+
         var now       = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
         var actInfo   = Activity.getActivityInfo();
         var monInfo   = ActivityMonitor.getInfo();
@@ -199,6 +263,15 @@ class RedLineView extends WatchUi.WatchFace {
 
     function onExitSleep() {
         _sleeping = false;
+    }
+
+    // Returns maximum half-width in pixels for content at a given y position
+    // Accounts for circular screen geometry + 14px buffer from edge
+    private function _safeHalfWidth(y) {
+        var dy = (y - _cy).abs().toFloat();
+        var r  = _cy.toFloat();
+        if (dy >= r) { return 0; }
+        return (Math.sqrt(r * r - dy * dy) - 14.0).toNumber();
     }
 
     // ── Drawing helpers ──────────────────────────────────────

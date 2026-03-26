@@ -1,7 +1,7 @@
 <settings>
     <setting propertyKey="@Properties.foregroundColor" title="@Strings.ColorTitle">
         <settingConfig type="list">
-            <listEntry value="13369617">@Strings.ColorRed</listEntry>
+            <listEntry value="16724736">@Strings.ColorRed</listEntry>
             <listEntry value="16733440">@Strings.ColorOrange</listEntry>
             <listEntry value="16755200">@Strings.ColorAmber</listEntry>
             <listEntry value="16776960">@Strings.ColorYellow</listEntry>
@@ -95,6 +95,13 @@
             <listEntry value="14">@Strings.WidgetSunrise</listEntry>
             <listEntry value="15">@Strings.WidgetSunset</listEntry>
             <listEntry value="16">@Strings.WidgetSpO2</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.BackgroundColor"
+             title="@Strings.SettingBgTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.SettingBgBlack</listEntry>
+            <listEntry value="1">@Strings.SettingBgWhite</listEntry>
         </settingConfig>
     </setting>
 </settings>
