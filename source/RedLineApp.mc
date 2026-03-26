@@ -76,20 +76,30 @@ class RedLineApp extends Application.AppBase {
         return "None";
     }
 
-    // Color value -> display label
+    // Color value -> display label (20 MIP-palette-exact colors)
     hidden function _colorLabel(val) {
-        if (val == null) { return "Red"; }
+        if (val == null) { return "Orange"; }
         switch (val) {
-            case 0xFF3300: return "Red";
-            case 0xFF5500: return "Orange";
-            case 0xFFAA00: return "Amber";
-            case 0xFFFF00: return "Yellow";
-            case 0x00CC00: return "Green";
-            case 0x00CCCC: return "Cyan";
-            case 0x3399FF: return "Blue";
-            case 0xAA44FF: return "Purple";
-            case 0xFF44AA: return "Pink";
             case 0xFFFFFF: return "White";
+            case 0xFFFFAA: return "Cream";
+            case 0xFFFF00: return "Yellow";
+            case 0xFFFF55: return "Light Yellow";
+            case 0xFFAA00: return "Amber";
+            case 0xFFAA55: return "Peach";
+            case 0xFF5500: return "Orange";
+            case 0xFF0000: return "Red";
+            case 0xFF5555: return "Coral";
+            case 0xFF55AA: return "Hot Pink";
+            case 0xFF55FF: return "Magenta";
+            case 0xAAAAFF: return "Lavender";
+            case 0xAA55FF: return "Purple";
+            case 0x55AAFF: return "Sky Blue";
+            case 0x00FFFF: return "Cyan";
+            case 0x55FFFF: return "Ice Blue";
+            case 0x00FFAA: return "Seafoam";
+            case 0x00FF00: return "Green";
+            case 0x55FF55: return "Light Green";
+            case 0xAAFF00: return "Lime";
         }
         return "Custom";
     }

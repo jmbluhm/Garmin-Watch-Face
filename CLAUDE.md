@@ -2,14 +2,14 @@
 
 ## Project Overview
 
-This is a Garmin Connect IQ watch face built in Monkey C for the **fēnix® 7 Pro** (product id: `fenix7pro`). The watch has a **454×454 AMOLED circular display**. The face is purely custom-drawn — no XML layouts, all rendering via `Graphics.Dc` in `onUpdate` / `onPartialUpdate`.
+This is a Garmin Connect IQ watch face built in Monkey C for the **fēnix® 7 Pro** (product id: `fenix7pro`). The watch has a **454×454 MIP (Memory-in-Pixel) transflective LCD circular display**. The face is purely custom-drawn — no XML layouts, all rendering via `Graphics.Dc` in `onUpdate` / `onPartialUpdate`.
 
 ## Tech Stack
 
 - **Language:** Monkey C
 - **SDK:** Garmin Connect IQ (latest installed via SDK Manager)
 - **IDE:** VS Code + Monkey C extension
-- **Target device:** `fenix7pro` (454×454, AMOLED, round)
+- **Target device:** `fenix7pro` (454×454, MIP transflective LCD, round)
 - **Min API Level:** 3.4.0 (covers fenix7pro; use SDK-verified level)
 - **Entry point class:** `RedLineApp` (extends `Application.AppBase`)
 - **View class:** `RedLineView` (extends `WatchUi.WatchFace`)
@@ -61,11 +61,24 @@ redline/
 - Custom bitmap fonts (`.fnt` + `.png` spritesheet) can be added under `resources/fonts/` and referenced via `Rez.Fonts.MyFont`. This is the path for a true DSEG7-style digit font in a future iteration.
 - Font height can be measured with `dc.getFontHeight(font)` — use this for vertical layout math.
 
+### Display — MIP (NOT AMOLED)
+
+The fenix7pro uses a **MIP (Memory-in-Pixel) transflective LCD** — NOT AMOLED.
+
+MIP key facts:
+- Reflects ambient light — more light = more readable WITHOUT backlight
+- Backlight illuminates from behind (like traditional LCD) for low-light use
+- **64-color palette** — RGB values are rounded to nearest of 64 fixed colors
+- Black vs white background: NO battery difference on MIP
+- Low-light visibility = **contrast** issue, not luminance. Use high-contrast color pairs
+- Best colors on black MIP: white, amber (`0xFFAA00`), orange (`0xFF5500`), green (`0x00FF00`), yellow (`0xFFFF00`)
+- Avoid on black: dark red (`0xCC1111`), dark blue (`0x0000FF`), dark green (`0x006600`) — low contrast
+
 ### Color
-- Primary color (text/symbols): `0xCC1111` (red)
-- Background BLACK: `0x000000` (true black — AMOLED pixel off)
+- Primary color (text/symbols): `0xFF5500` (orange-red, default — high MIP contrast)
+- Background BLACK: `0x000000`
 - Background WHITE: `0xFFFFFF`
-- Dim/ghost color: `0x330000` (very dark red, used for secondary labels)
+- Secondary/dim colors: preset per accent color, not derived mathematically
 - In Monkey C: `dc.setColor(foreground, background)` — the background param in `drawText` fills behind the glyph; use `Graphics.COLOR_TRANSPARENT` for the bg arg when drawing text over already-drawn backgrounds.
 
 ### Data sources
@@ -77,17 +90,17 @@ redline/
 | Date (month, day) | `Gregorian.info(...)` → `.month`, `.day` |
 | Heart rate | `Activity.getActivityInfo().currentHeartRate` |
 | Step count | `ActivityMonitor.getInfo().steps` |
-| Body battery | `UserProfile.getActiveMinutesWeek()` — **Note:** Body Battery is not directly exposed in CIQ API; use `ActivityMonitor.getInfo().bodyBattery` if available on device, otherwise omit or show `--` |
+| Body battery | `SensorHistory.getBodyBatteryHistory({:period=>1})` → iterate `.next()` → `.data` (requires `SensorHistory` permission) |
 | Device battery | `System.getSystemStats().battery` → returns 0.0–100.0 |
 | Weather / temp | `Weather.getCurrentConditions().temperature` (requires `<iq:permission id="WeatherConditions"/>` in manifest) |
 
 ### Permissions required in manifest.xml
 ```xml
 <iq:permissions>
-  <iq:uses-permission id="WeatherConditions"/>
+  <iq:uses-permission id="SensorHistory"/>
 </iq:permissions>
 ```
-`ActivityMonitor` and `System` do **not** require explicit permissions — they are always accessible.
+`ActivityMonitor`, `System`, and `Weather` do **not** require explicit permissions on fenix7pro. `SensorHistory` is required for body battery data.
 
 ### 12-hour time formatting
 ```monkeyc

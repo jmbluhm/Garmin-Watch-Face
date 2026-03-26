@@ -32,10 +32,10 @@ class RedLineView extends WatchUi.WatchFace {
     hidden const W_SPO2        = 16;
 
     // Colors (loaded from settings)
-    // Default: red-orange with high luminance for AMOLED visibility
-    hidden var CLR_PRIMARY   = 0xFF3300;
-    hidden var CLR_SECONDARY = 0xCC2200;
-    hidden var CLR_GHOST     = 0x881100;
+    // MIP display: high contrast matters, not luminance
+    hidden var CLR_PRIMARY   = 0xFF5500;
+    hidden var CLR_SECONDARY = 0xAA3300;
+    hidden var CLR_GHOST     = 0x551100;
     hidden var CLR_BG        = 0x000000;
 
     // Day-of-week lookup (1=Sun per Gregorian)
@@ -43,8 +43,9 @@ class RedLineView extends WatchUi.WatchFace {
     hidden var _monNames = ["", "JAN", "FEB", "MAR", "APR", "MAY", "JUN",
                                 "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
 
-    // Custom font reference
-    private var _fontTime;
+    // Font references — 2 weights
+    private var _fontTime;    // light weight — active mode (backlight on)
+    private var _fontBold;    // bold weight — passive/sleep mode (backlight off)
 
     // Widget slot configuration (loaded from settings)
     hidden var _widgetSlots = [1, 2, 10, 7];
@@ -81,7 +82,6 @@ class RedLineView extends WatchUi.WatchFace {
     private var _bgWhite = false;
 
     // Pre-allocated polygon arrays for icons
-    var _heartPoly;
     var _boltPoly;
     var _calPoly;
     var _distPoly;
@@ -95,20 +95,17 @@ class RedLineView extends WatchUi.WatchFace {
     }
 
     function loadSettings() {
-        // Load color
+        // Load color — MIP-optimized preset palette
         var color = Application.Properties.getValue("foregroundColor");
         if (color != null && color instanceof Number) {
             CLR_PRIMARY = color;
         } else {
-            CLR_PRIMARY = 0xFF3300;
+            CLR_PRIMARY = 0xFF5500;
         }
-        // Derive secondary (~80% brightness) and ghost (~53% brightness)
-        // Brighter ratios for AMOLED visibility when backlight is off
-        var r = (CLR_PRIMARY >> 16) & 0xFF;
-        var g = (CLR_PRIMARY >> 8) & 0xFF;
-        var b = CLR_PRIMARY & 0xFF;
-        CLR_SECONDARY = ((r * 4 / 5) << 16) | ((g * 4 / 5) << 8) | (b * 4 / 5);
-        CLR_GHOST = ((r * 8 / 15) << 16) | ((g * 8 / 15) << 8) | (b * 8 / 15);
+        // Lookup secondary (~65%) and ghost (~35%) per color
+        // Preset values tuned for MIP 64-color palette contrast
+        CLR_SECONDARY = _lookupSecondary(CLR_PRIMARY);
+        CLR_GHOST = _lookupDim(CLR_PRIMARY);
 
         // Load background preference
         var bgPref = Application.Properties.getValue("BackgroundColor");
@@ -126,23 +123,60 @@ class RedLineView extends WatchUi.WatchFace {
         _widgetSlots[3] = (w4 != null && w4 instanceof Number) ? w4 : 7;
     }
 
+    hidden function _lookupSecondary(primary) {
+        switch (primary) {
+            case 0xFFFFFF: return 0xAAAAAA;
+            case 0xFFAA00: return 0xAA7700;
+            case 0xFF5500: return 0xAA3300;
+            case 0x00FF00: return 0x00AA00;
+            case 0x00FFFF: return 0x00AAAA;
+            case 0xFFFF00: return 0xAAAA00;
+            case 0xFF5555: return 0xAA3333;
+            case 0x55AAFF: return 0x3377AA;
+        }
+        // Fallback: derive mathematically
+        var r = (primary >> 16) & 0xFF;
+        var g = (primary >> 8) & 0xFF;
+        var b = primary & 0xFF;
+        return ((r * 2 / 3) << 16) | ((g * 2 / 3) << 8) | (b * 2 / 3);
+    }
+
+    hidden function _lookupDim(primary) {
+        switch (primary) {
+            case 0xFFFFFF: return 0x555555;
+            case 0xFFAA00: return 0x553300;
+            case 0xFF5500: return 0x551100;
+            case 0x00FF00: return 0x005500;
+            case 0x00FFFF: return 0x005555;
+            case 0xFFFF00: return 0x555500;
+            case 0xFF5555: return 0x551111;
+            case 0x55AAFF: return 0x113355;
+        }
+        // Fallback: derive mathematically
+        var r = (primary >> 16) & 0xFF;
+        var g = (primary >> 8) & 0xFF;
+        var b = primary & 0xFF;
+        return ((r / 3) << 16) | ((g / 3) << 8) | (b / 3);
+    }
+
     function onLayout(dc) {
         _width  = dc.getWidth();
         _height = dc.getHeight();
         _cx     = _width / 2;
         _cy     = _height / 2;
 
-        // Load custom font
+        // Load font weights
         _fontTime = WatchUi.loadResource(Rez.Fonts.DSEG7Time);
+        _fontBold = WatchUi.loadResource(Rez.Fonts.DSEG7Bold);
 
-        // Measure ACTUAL rendered heights
-        _hTime  = dc.getFontHeight(_fontTime);
+        // Use bold for layout measurements (it's the larger of the two)
+        _hTime  = dc.getFontHeight(_fontBold);
         _hSmall = dc.getFontHeight(Graphics.FONT_SMALL);
         _hTiny  = dc.getFontHeight(Graphics.FONT_TINY);
 
-        var testW = dc.getTextWidthInPixels("00:00:00", _fontTime);
+        var testW = dc.getTextWidthInPixels("00:00:00", _fontBold);
         System.println("hTime=" + _hTime + " hSmall=" + _hSmall +
-                       " hTiny=" + _hTiny + " timeW=" + testW +
+                       " hTiny=" + _hTiny + " boldTimeW=" + testW +
                        " screen=" + _width);
 
         // Proportional layout — top chunk scooted down, compact widget grid
@@ -171,7 +205,7 @@ class RedLineView extends WatchUi.WatchFace {
 
         // Check time row for clipping and report slack for font size iteration
         var timeTestStr = "00:00:00";
-        var timeW = dc.getTextWidthInPixels(timeTestStr, _fontTime);
+        var timeW = dc.getTextWidthInPixels(timeTestStr, _fontBold);
         var safeW = _safeHalfWidth(_yTime) * 2;
         var slack = safeW - timeW;
         if (timeW > safeW) {
@@ -206,7 +240,6 @@ class RedLineView extends WatchUi.WatchFace {
         _slotYs = [_yGrid1, _yGrid1, _yGrid2, _yGrid2];
 
         // Pre-allocate icon polygons
-        _heartPoly = [[0, 0], [0, 0], [0, 0]];
         _boltPoly  = [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0]];
         _calPoly   = [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]];
         _distPoly  = [[0, 0], [0, 0], [0, 0]];
@@ -241,11 +274,16 @@ class RedLineView extends WatchUi.WatchFace {
         _drawBatteryText(dc, sysStat);
         _drawDate(dc, now);
         _drawTime(dc, clockTime);
-        _drawDivider(dc);
         _drawDataGrid(dc, actInfo, monInfo, weather, sysStat);
     }
 
     function onPartialUpdate(dc) {
+        // In sleep mode we only show HH:MM (no seconds) — skip partial updates
+        // This saves battery: no per-second redraws when backlight is off
+        if (_sleeping) {
+            return;
+        }
+
         var clockTime = System.getClockTime();
         var clipY     = _yTime - _hTime / 2 - 4;
         var clipH     = _hTime + 16;
@@ -259,10 +297,12 @@ class RedLineView extends WatchUi.WatchFace {
 
     function onEnterSleep() {
         _sleeping = true;
+        WatchUi.requestUpdate();
     }
 
     function onExitSleep() {
         _sleeping = false;
+        WatchUi.requestUpdate();
     }
 
     // Returns maximum half-width in pixels for content at a given y position
@@ -290,21 +330,26 @@ class RedLineView extends WatchUi.WatchFace {
         var h12   = h24 % 12;
         if (h12 == 0) { h12 = 12; }
 
+        // Light font when active, bold when passive (better MIP readability without backlight)
+        var font = _sleeping ? _fontBold : _fontTime;
+
         var hrStr  = h12.format("%02d");
         var minStr = clockTime.min.format("%02d");
-        var secStr = clockTime.sec.format("%02d");
 
+        // Always show HH:MM:SS format — in passive mode freeze seconds at "00"
+        var secStr = _sleeping ? "00" : clockTime.sec.format("%02d");
         var timeStr = hrStr + ":" + minStr + ":" + secStr;
+
         var justify = Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER;
 
         dc.setColor(CLR_PRIMARY, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(_cx, _yTime, _fontTime, timeStr, justify);
+        dc.drawText(_cx, _yTime, font, timeStr, justify);
 
         // PM indicator: small filled dot, top-right of time block
         if (isPM) {
-            var timeW = dc.getTextWidthInPixels(timeStr, _fontTime);
+            var timeW = dc.getTextWidthInPixels(timeStr, font);
             var dotX  = _cx + timeW / 2 + _width * 2 / 100;
-            var dotY  = _yTime - _hTime / 2 + _height * 1 / 100;
+            var dotY  = _yTime - dc.getFontHeight(font) / 2 + _height * 1 / 100;
             dc.setColor(CLR_PRIMARY, Graphics.COLOR_TRANSPARENT);
             dc.fillCircle(dotX, dotY, 4);
         }
@@ -384,9 +429,7 @@ class RedLineView extends WatchUi.WatchFace {
                 break;
             case W_BODY_BATT:
                 _drawBoltIcon(dc, iconX, iconY);
-                if (monInfo != null && monInfo has :bodyBattery && monInfo.bodyBattery != null) {
-                    val = monInfo.bodyBattery.toString();
-                }
+                val = _getBodyBattery();
                 break;
             case W_STRESS:
                 _drawStressIcon(dc, iconX, iconY);
@@ -453,15 +496,21 @@ class RedLineView extends WatchUi.WatchFace {
 
     // ── Icon drawing functions ───────────────────────────────
 
-    // Heart icon: two overlapping circles + triangle
+    // Heart icon: 10-point polygon tracing classic heart silhouette (~14x13px)
     function _drawHeartIcon(dc, x, y) {
         dc.setColor(CLR_PRIMARY, Graphics.COLOR_TRANSPARENT);
-        dc.fillCircle(x + 5, y - 1, 5);
-        dc.fillCircle(x + 13, y - 1, 5);
-        _heartPoly[0] = [x, y + 2];
-        _heartPoly[1] = [x + 18, y + 2];
-        _heartPoly[2] = [x + 9, y + 13];
-        dc.fillPolygon(_heartPoly);
+        dc.fillPolygon([
+            [x + 7,  y + 12],
+            [x + 1,  y + 5],
+            [x + 1,  y + 2],
+            [x + 3,  y + 0],
+            [x + 5,  y + 0],
+            [x + 7,  y + 3],
+            [x + 9,  y + 0],
+            [x + 11, y + 0],
+            [x + 13, y + 2],
+            [x + 13, y + 5]
+        ]);
     }
 
     // Steps icon: three ascending bars
@@ -605,6 +654,26 @@ class RedLineView extends WatchUi.WatchFace {
         _boltPoly[4] = [x + 13, y + 7];
         _boltPoly[5] = [x + 9, y + 7];
         dc.fillPolygon(_boltPoly);
+    }
+
+    // ── Data helpers ────────────────────────────────────────
+
+    // Body battery via SensorHistory (ActivityMonitor.bodyBattery returns null on fenix7pro)
+    function _getBodyBattery() {
+        if ((Toybox has :SensorHistory) &&
+            (Toybox.SensorHistory has :getBodyBatteryHistory)) {
+            var iter = Toybox.SensorHistory.getBodyBatteryHistory({ :period => 1 });
+            if (iter != null) {
+                var sample = iter.next();
+                if (sample != null && sample.data != null) {
+                    var val = sample.data;
+                    if (val >= 0 && val <= 100) {
+                        return val.toNumber().toString();
+                    }
+                }
+            }
+        }
+        return "--";
     }
 
     // ── Formatting helpers ───────────────────────────────────
