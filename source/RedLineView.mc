@@ -58,7 +58,7 @@ class RedLineView extends WatchUi.WatchFace {
     var _yBattText;
     var _yDate;
     var _yTime;
-    var _yDivider;
+    var _yDivider;  // kept for safe-zone verification logging
     var _yGrid1;
     var _yGrid2;
     var _xLeft;
@@ -80,6 +80,14 @@ class RedLineView extends WatchUi.WatchFace {
 
     // Background preference
     private var _bgWhite = false;
+
+    // Sensor data caches — expensive calls refreshed on intervals
+    private var _cachedWeather = null;        // Weather.getCurrentConditions()
+    private var _cachedBodyBattery = "--";    // SensorHistory body battery string
+    private var _weatherMinute = -99;         // last refresh minute-of-day
+    private var _bodyBattMinute = -99;        // last refresh minute-of-day
+    hidden const WEATHER_INTERVAL = 15;       // refresh every 15 minutes
+    hidden const BODY_BATT_INTERVAL = 5;      // refresh every 5 minutes
 
     // Pre-allocated polygon arrays for icons
     var _boltPoly;
@@ -259,22 +267,41 @@ class RedLineView extends WatchUi.WatchFace {
 
         var clockTime = System.getClockTime();
 
-        if (_sleeping) {
-            // Always-on mode: draw time only (fewer pixels = better battery)
-            _drawTime(dc, clockTime);
-            return;
-        }
-
+        // Always draw the full face — even in sleep mode onUpdate only fires
+        // once per minute so this is not expensive. The Light button may not
+        // trigger onExitSleep, so we must always render widgets.
         var now       = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
         var actInfo   = Activity.getActivityInfo();
         var monInfo   = ActivityMonitor.getInfo();
         var sysStat   = System.getSystemStats();
-        var weather   = Weather.getCurrentConditions();
+
+        // Expensive calls — cached with interval-based refresh
+        var minuteOfDay = clockTime.hour * 60 + clockTime.min;
+        _refreshCaches(minuteOfDay);
 
         _drawBatteryText(dc, sysStat);
         _drawDate(dc, now);
         _drawTime(dc, clockTime);
-        _drawDataGrid(dc, actInfo, monInfo, weather, sysStat);
+        _drawDataGrid(dc, actInfo, monInfo, _cachedWeather, sysStat);
+    }
+
+    // Refresh expensive sensor caches on their respective intervals
+    hidden function _refreshCaches(minuteOfDay) {
+        // Weather: refresh every 15 minutes
+        var weatherAge = minuteOfDay - _weatherMinute;
+        if (weatherAge < 0) { weatherAge = weatherAge + 1440; } // midnight wrap
+        if (weatherAge >= WEATHER_INTERVAL || _cachedWeather == null) {
+            _cachedWeather = Weather.getCurrentConditions();
+            _weatherMinute = minuteOfDay;
+        }
+
+        // Body battery: refresh every 5 minutes
+        var bbAge = minuteOfDay - _bodyBattMinute;
+        if (bbAge < 0) { bbAge = bbAge + 1440; }
+        if (bbAge >= BODY_BATT_INTERVAL) {
+            _cachedBodyBattery = _getBodyBattery();
+            _bodyBattMinute = minuteOfDay;
+        }
     }
 
     function onPartialUpdate(dc) {
@@ -429,7 +456,7 @@ class RedLineView extends WatchUi.WatchFace {
                 break;
             case W_BODY_BATT:
                 _drawBoltIcon(dc, iconX, iconY);
-                val = _getBodyBattery();
+                val = _cachedBodyBattery;
                 break;
             case W_STRESS:
                 _drawStressIcon(dc, iconX, iconY);
